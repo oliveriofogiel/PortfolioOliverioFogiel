@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Oliverio Fogiel | Game Dev</title>
+  <meta name="description" content="Portfolio y perfil de Oliverio Fogiel: Game Developer (Unreal / Unity)." />
+  <style>
+    :root{
+      --bg:#0b0f17; --card:#121a28; --text:#e8eefc; --muted:#a9b6d3;
+      --accent:#7c5cff; --line:#23314a;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      background:radial-gradient(1200px 600px at 20% 0%, #182342 0%, var(--bg) 60%);
+      color:var(--text);
+    }
+    a{color:inherit; text-decoration:none}
+    .wrap{max-width:1024px; margin:0 auto; padding:28px 18px 60px}
+    header{display:flex; justify-content:space-between; align-items:center; gap:14px}
+    .logo{font-weight:800; letter-spacing:.3px}
+    nav{display:flex; gap:14px; flex-wrap:wrap}
+    nav a{color:var(--muted); font-size:14px}
+    nav a:hover{color:var(--text)}
+    .hero{
+      margin-top:34px; padding:26px; border:1px solid var(--line);
+      background:linear-gradient(180deg, rgba(124,92,255,.14), rgba(18,26,40,.8));
+      border-radius:18px;
+    }
+    .badge{
+      display:inline-flex; gap:8px; align-items:center; font-size:12px;
+      color:var(--muted); border:1px solid var(--line); padding:6px 10px; border-radius:999px;
+      background:rgba(11,15,23,.4);
+    }
+    h1{margin:14px 0 8px; font-size:44px; line-height:1.05}
+    .subtitle{color:var(--muted); font-size:16px; max-width:70ch}
+    .cta{display:flex; gap:10px; margin-top:18px; flex-wrap:wrap}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:10px 14px; border-radius:12px; border:1px solid var(--line);
+      background:rgba(18,26,40,.6); color:var(--text); font-weight:600;
+    }
+    .btn.primary{background:var(--accent); border-color:transparent}
+    .btn:hover{filter:brightness(1.05)}
+    .grid{display:grid; gap:14px; margin-top:22px}
+    @media(min-width:840px){ .grid.cols3{grid-template-columns:repeat(3,1fr)} }
+    @media(min-width:840px){ .grid.cols2{grid-template-columns:repeat(2,1fr)} }
+    section{margin-top:34px}
+    .card{
+      border:1px solid var(--line); background:rgba(18,26,40,.65);
+      border-radius:16px; padding:16px;
+    }
+    .card h3{margin:0 0 8px; font-size:18px}
+    .card p{margin:0; color:var(--muted); font-size:14px; line-height:1.5}
+    .tags{display:flex; gap:8px; flex-wrap:wrap; margin-top:10px}
+    .tag{font-size:12px; color:var(--muted); border:1px solid var(--line); padding:5px 9px; border-radius:999px}
+    .projTop{display:flex; justify-content:space-between; gap:10px; align-items:flex-start}
+    .links{display:flex; gap:10px; flex-wrap:wrap; margin-top:12px}
+    .links a{font-size:13px; color:var(--text); opacity:.9}
+    .links a:hover{opacity:1; text-decoration:underline}
+    footer{margin-top:40px; color:var(--muted); font-size:13px}
+    .muted{color:var(--muted)}
+    .split{display:grid; gap:14px}
+    @media(min-width:840px){ .split{grid-template-columns:1.15fr .85fr} }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">Oliverio.dev</div>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#skills">Skills</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <span class="badge">🎮 Game Developer • Unreal / Unity</span>
+      <h1>Oliverio Fogiel</h1>
+      <p class="subtitle">
+        Estudiante de Diseño de Videojuegos (UADE). Me enfoco en gameplay, prototipado rápido y sistemas.
+        Busco colaborar en proyectos y oportunidades junior.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="#proyectos">Ver proyectos</a>
+        <a class="btn" href="#contacto">Contactarme</a>
+      </div>
+    </div>
+
+    <section id="sobre" class="split">
+      <div class="card">
+        <h3>Sobre mí</h3>
+        <p>
+          Soy Oliverio Fogiel, game dev en formación. Me gusta construir mecánicas claras, feedback fuerte y sistemas
+          reutilizables. Trabajo con Unreal (Blueprints) y Unity (C#), y me interesa también hacer experiencias
+          interactivas (real-time / simulaciones / recorridos virtuales).
+        </p>
+        <div class="tags">
+          <span class="tag">Unreal Engine</span>
+          <span class="tag">Unity</span>
+          <span class="tag">C#</span>
+          <span class="tag">Blueprints</span>
+          <span class="tag">Gameplay</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Highlights</h3>
+        <p>✅ Prototipos rápidos (gameplay loops)</p>
+        <p>✅ UI básica / HUD / Menús</p>
+        <p>✅ Física y colisiones</p>
+        <p>✅ Trabajo en equipo (sprints)</p>
+      </div>
+    </section>
+
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+      <div class="grid cols3">
+
+        <div class="card">
+          <div class="projTop">
+            <h3>Almas de la Orilla</h3>
+            <span class="muted">Mascaras</span>
+          </div>
+          <p>Juego con sistema de máscaras/habilidades y enfoque en gameplay y progresión.</p>
+          <div class="links">
+            <a href="https://oliverio-fogiel.itch.io/" target="_blank">Itch.io</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="projTop">
+            <h3>Beyond the Maze</h3>
+            <span class="muted">Laberinto</span>
+          </div>
+          <p>Juego de laberinto centrado en exploración, desafío y navegación.</p>
+          <div class="links">
+            <a href="https://oliverio-fogiel.itch.io/" target="_blank">Itch.io</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="projTop">
+            <h3>In Sync</h3>
+            <span class="muted">2025</span>
+          </div>
+          <p>Juego en equipo con cambio de personaje (Chip/Penny), combate frenético y estilo low poly.</p>
+          <div class="links">
+            <a href="https://oliverio-fogiel.itch.io/" target="_blank">Itch.io</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="grid cols2">
+        <div class="card">
+          <h3>Tech</h3>
+          <div class="tags">
+            <span class="tag">Unreal (Blueprints)</span>
+            <span class="tag">Unity (C#)</span>
+            <span class="tag">Git</span>
+            <span class="tag">UI / UMG</span>
+            <span class="tag">Physics / Collisions</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Tools</h3>
+          <div class="tags">
+            <span class="tag">Photoshop</span>
+            <span class="tag">Illustrator</span>
+            <span class="tag">Blender (básico)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <div class="card">
+        <p><b>Email:</b> <a href="mailto:oliifogiel@gmail.com">oliifogiel@gmail.com</a></p>
+        <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/oliverio-fogiel-8307902b4" target="_blank">linkedin.com/in/oliverio-fogiel-8307902b4</a></p>
+        <p><b>Itch.io:</b> <a href="https://oliverio-fogiel.itch.io/" target="_blank">oliverio-fogiel.itch.io</a></p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Oliverio Fogiel — hecho con HTML/CSS.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
